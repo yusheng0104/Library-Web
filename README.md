@@ -1,7 +1,5 @@
 # Create a library web page
 
-Web Programming with Python and JavaScript
-
 First, set up DATABASE
 1. books table was created by following sql code:
 CREATE TABLE books(
