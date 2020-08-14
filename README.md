@@ -1,4 +1,4 @@
-# Project 1
+# Create a library web page
 
 Web Programming with Python and JavaScript
 
