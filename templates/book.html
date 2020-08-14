@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Flight
+{% endblock %}
+
+{% block body %}
+    <h1>Book Details</h1>
+
+    <ul>
+        <li>ISBN: {{ book.isbn }}</li>
+        <li>Title: {{ book.title }}</li>
+        <li>Author: {{ book.author}}</li>
+        <li>Year: {{ book.year}}</li>
+        <li>Rating from Goodreads: {{review_rating}}</li>
+        <li>Review Count from Goodreads: {{ review_count}}</li>
+    </ul>
+
+    <h2>Review and Rating</h2>
+
+        <form action="" method="post">
+
+            <div class="form-group">
+                <input class="form-control" name="comments" type="text" placeholder ="Input your review here">
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" name="rating" type="integer" placeholder="Input your rating here">
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary">Submit</button>
+            </div>
+
+        </form>
+
+        <h2>Review:</h2>
+        <ul>
+          {{book.review}}
+        </ul>
+        <h2>Rating:</h2>
+        <ul>
+          {{book.rating}}
+        </ul>
+{% endblock %}
